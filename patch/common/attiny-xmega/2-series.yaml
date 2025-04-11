@@ -3,3 +3,17 @@
 # without even trying to access the address.
 VPORTA:
   _delete: DIR
+
+EVSYS:
+  "CHANNEL*":
+    _modify:
+      "CHANNEL*":
+        name: CHANNEL
+        description: "Channel generator select"
+  _array:
+    "CHANNEL*": {}
+
+PORT[A-Z]:
+  # make PINxCTRL a rust slice
+  _array:
+    "PIN?CTRL": {}

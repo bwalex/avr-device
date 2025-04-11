@@ -1,7 +1,7 @@
 # This is probably good for ATtiny20x, ATtiny40x, ATtiny21x, ATtiny41x
 # It may not be enough for Attiny8xx, ATtiny16xx, or ATtinyx2x
 
-TCB0:
+TCB?:
   CTRLB:
     _modify:
       # 'async' is reserved

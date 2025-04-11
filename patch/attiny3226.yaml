@@ -1,0 +1,5 @@
+_svd: ../svd/attiny3226.svd
+
+_include:
+  - common/attiny-xmega/common.yaml
+  - common/attiny-xmega/2-series.yaml
