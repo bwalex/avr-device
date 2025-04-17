@@ -17,3 +17,22 @@ PORT[A-Z]:
   # make PINxCTRL a rust slice
   _array:
     "PIN?CTRL": {}
+
+# Unclear why this is needed, but otherwise things don't get generated properly.
+BOD:
+  CTRLB:
+    _modify:
+      LVL:
+        description: "BOD Level"
+        bitRange: "[2:0]"
+        access: read-write
+  CTRLA:
+    _modify:
+      SAMPFREQ:
+        description: "Sample frequency"
+        bitRange: "[4]"
+        access: read-write
+      ACTIVE:
+        description: "Active"
+        bitRange: "[3:2]"
+        access: read-write
